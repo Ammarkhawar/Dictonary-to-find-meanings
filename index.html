@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    
+    <div class="radio-buttons-with-cta">
+        <h1>Choose a word to know its meaning:</h1>
+        <div id="radio-buttons">
+            <label>
+                <input type="radio" name="word" value="Hello"> Hello
+            </label>
+            <label>
+                <input type="radio" name="word" value="World"> World
+            </label>
+            <label>
+                <input type="radio" name="word" value="JavaScript"> JavaScript
+            </label>
+            <label>
+                <input type="radio" name="word" value="Code"> Code
+            </label>
+            <label>
+                <input type="radio" name="word" value="Function"> Function
+            </label>
+             <label>
+                <input type="radio" name="word" value="Acting"> Acting
+            </label>
+        </div>
+        <button onclick="getSelectedWord()">Submit</button>
+    </div>
+
+    <div class="result">
+        <h2>Meaning:</h2>
+        <p id="meaning"></p>
+
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+<script>
+    function getSelection() {
+        let choice = document.getElementById("color").value;
+        console.log("You selected: " + choice);
+    }
+</script>
